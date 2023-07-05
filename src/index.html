@@ -1,0 +1,104 @@
+<%- include('_layouts/layout', { title: 'Home page' }); -%>
+
+<!-- @meta -->
+<meta name="description" content="Contact page">
+<!-- @@meta -->
+
+<!-- @content -->
+<main class="contact">
+    <div class="l-container">
+        <div class="c-form">
+            <form action="#" method="post">
+                <div class="c-form__item">
+                    <label for="selectbox" class="c-form__left c-form__label">募集職種
+                        <span class="c-form__required">必須</span>
+                    </label>
+                    <select class="c-form__right c-form__select" name="selectbox" id="selectbox" required="required" >
+                        <option hidden disabled selected value>webエンジニア・プログラマー</option>
+                        <option value="webエンジニア・プログラマー"  id="selectbox-0">webエンジニア・プログラマー</option>
+                        <option value="webデザイナー・グラフィックデザイナー" id="selectbox-1">webデザイナー・グラフィックデザイナー</option>
+                        <option value="webプロデューサー" id="selectbox-2">webプロデューサー</option>
+                        <option value="iOSアプリエンジニア" id="selectbox-3">iOSアプリエンジニア</option>
+                        <option value="androidアプリエンジニア" id="selectbox-4">androidアプリエンジニア</option>
+                        <option value="スマホゲームプロデューサー" id="selectbox-5">スマホゲームプロデューサー</option>
+                        <option value="法人営業・webコンサルタント" id="selectbox-6">法人営業・webコンサルタント</option>
+                    </select>
+                </div>
+                <div class="c-form__item">
+                    <label for="name" class="c-form__left c-form__label c-form__label--pp">お名前
+                        <span class="c-form__required">必須</span>
+                    </label>
+                    <input type="text" class="c-form__right c-form__input" name="name"  id="name" required="required"  placeholder=" ">
+                </div>
+                <div class="c-form__item c-form__item--pp">
+                    <label for="namekana" class="c-form__left c-form__label c-form__label--pp">お名前（フリガナ）
+                        <span class="c-form__required">必須</span>
+                    </label>
+                    <input type="text" class="c-form__right c-form__input" name="namekana"  id="namekana" required="required"  placeholder=" ">
+                </div>
+                <div class="c-form__item c-form__item--pp2">
+                    <label  class="c-form__left c-form__label">性別</label>
+                    <div class="c-form__radiogroup c-form__right">
+                        <div class="c-form__radioitem">
+                            <label for="radio-group-0">
+                                <input name="radio-group"  id="radio-group-0" value="男性" type="radio">
+                                <span class="checkmark"></span>
+                                男性
+                            </label>
+                        </div>
+                        <div class="c-form__radioitem">
+                            <label for="radio-group-1">
+                                <input name="radio-group"  id="radio-group-1" value="男性" type="radio">
+                                <span class="checkmark"></span>
+                                男性
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="c-form__item c-form__item--pp">
+                    <label for="email" class="c-form__left c-form__label c-form__label--pp">メールアドレス
+                        <span class="c-form__required">必須</span>
+                    </label>
+                    <input type="text" class="c-form__right c-form__input" name="email"  id="email" required="required"  placeholder=" ">
+                </div>
+                <div class="c-form__item ">
+                    <label for="phone" class="c-form__left c-form__label c-form__label--pp">電話番号</label>
+                    <input type="text" class="c-form__right c-form__input" name="phone"  id="phone"  placeholder=" ">
+                </div>
+                <div class="c-form__other">
+                    <textarea  placeholder="ご用件、ご質問などをご記入ください" class="c-form__textarea" name="other"  id="other" rows="6"></textarea>
+                </div>
+                <div class="c-form__file">
+                    <div class="c-form__fileleft">
+                        <p class="c-form__text">(CV)添付ファイル</p>
+                        <span class="c-form__tooltip">※pdf,excel,word,jpg,pngのみ</span>
+                    </div>
+                    <input type="file" class="c-form__input form-control" name="file-01" 
+                    accept=".pdf, .xlsx, .xls, .doc, .docx, .jpg, .jpeg, .png" id="file-01" hidden>
+                    <div class="c-form__button">
+                        <label for="file-01" class="c-form__buttontext">ファイルを選択する</label>
+                        <span class="c-form__chosen"></span>
+                    </div>
+                </div>
+                <div class="c-form__file">
+                    <div class="c-form__fileleft">
+                        <p class="c-form__text">(Avatar)添付ファイル</p>
+                        <span class="c-form__tooltip">※jpg,pngのみ</span>
+                    </div>
+                    <input type="file" class="c-form__input form-control" name="file-02" 
+                    accept=".jpg, .jpeg, .png" id="file-02" hidden>
+                    <div class="c-form__button">
+                        <label for="file-02" class="c-form__buttontext">ファイルを選択する</label>
+                        <span class="c-form__chosen"></span>
+                    </div>
+                </div>
+                <button class="c-form__btnsubmit" type="submit">入力内容を確認</button>
+            </form>
+        </div>
+    </div>
+</main>
+<!-- @@content -->
+
+<!-- @script -->
+
+<!-- @@script -->

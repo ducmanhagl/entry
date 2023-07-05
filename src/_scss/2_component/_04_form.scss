@@ -1,0 +1,269 @@
+/*------------------------------------------------------------
+form
+------------------------------------------------------------*/
+
+/*
+------------------------------------------------------------*/
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    background: #e1e1e1;
+    border: 1px solid #e1e1e1;
+    height: 31px;
+}
+
+input[type="text"]:focus,
+input[type="text"]:not(:placeholder-shown),
+input[type="email"]:focus,
+input[type="email"]:not(:placeholder-shown),
+input[type="tel"]:focus,
+input[type="tel"]:not(:placeholder-shown) {
+    background: #fff;
+}
+
+.c-form {
+    padding-top: 38px;
+    margin-bottom: 436px;
+
+    .c-form__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 0;
+        border-bottom: 1px solid rgb(225, 225, 225);
+
+        &.c-form__item--pp {
+            padding: 16px 0;
+        }
+
+        &.c-form__item--pp2 {
+            padding: 18px 0;
+        }
+    }
+
+    .c-form__label {
+        font-size: 1.8rem;
+        color: rgb(51, 51, 51);
+        line-height: 1.5;
+        font-weight: 400;
+
+        &.c-form__label--pp {
+            transform: translateY(1px);
+        }
+    }
+
+    .c-form__required {
+        font-size: 1.3rem;
+        color: rgb(255, 255, 255);
+        font-weight: 400;
+        line-height: 1.5;
+        background-color: rgb(0, 54, 99);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 45px;
+        height: 25px;
+    }
+
+    .c-form__select {
+        font-size: 1.8rem;
+        font-family: $main-fonts;
+        color: rgb(163, 163, 163);
+        line-height: 1.5;
+        font-weight: 400;
+        height: 45px;
+        appearance: none;
+        background-image: url(../../assets/img/dropdown.png);
+        background-repeat: no-repeat;
+        background-position: right 14px center;
+        background-size: 15px;
+        border-color: rgb(161, 161, 161);
+        padding-left: 0;
+        font-feature-settings: "palt";
+        letter-spacing: 0.02em;
+        padding-left: 15px;
+        transform: translateY(-2px);
+    }
+
+    .c-form__left {
+        width: 100%;
+        flex: 0 0 calc(30% - 1px);
+        max-width: calc(30% - 1px);
+        display: flex;
+        justify-content: space-between;
+        margin-right: 49px;
+        font-feature-settings: "palt";
+    }
+
+    .c-form__right {
+        flex: 1;
+    }
+
+    .c-form__input {
+        font-size: 1.8rem;
+        color: rgb(51, 51, 51);
+        font-family: $main-fonts;
+        font-feature-settings: "palt";
+        line-height: 1.5;
+        padding-left: 15px;
+    }
+
+    .c-form__radioitem {
+        font-size: 1.8rem;
+        font-family: $main-fonts;
+        color: rgb(51, 51, 51);
+        line-height: 1.5;
+        width: 49.2%;
+
+        label {
+            position: relative;
+            padding-left: 32px;
+            cursor: pointer;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        input:checked ~ .checkmark::after {
+            display: block;
+        }
+    }
+
+    .checkmark {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        height: 18px;
+        width: 18px;
+        background-color: #fff;
+        border-radius: 100px;
+        border: 2px solid #555;
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: none;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 8px;
+            height: 8px;
+            border-radius: 50px;
+            background: #555;
+        }
+    }
+
+    .c-form__radiogroup {
+        display: flex;
+    }
+
+    .c-form__other {
+        width: 100%;
+        padding-top: 16px;
+        margin-bottom: 22px;
+    }
+
+    .c-form__textarea {
+        width: 100%;
+        font-size: 1.8rem;
+        color: rgb(51, 51, 51);
+        font-family: $main-fonts;
+        font-feature-settings: "palt";
+        line-height: 1.5;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 27px;
+        padding-top: 9px;
+        box-sizing: border-box;
+        border-radius: 0;
+    }
+
+    .c-form__file {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+
+    }
+
+    .c-form__fileleft {
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+
+    .c-form__text {
+        font-size: 1.8rem;
+        font-family: $main-fonts;
+        color: rgb(51, 51, 51);
+        line-height: 1.5;
+        font-feature-settings: "palt";
+        width: 40%;
+        margin-right: 12px;
+    }
+
+    .c-form__tooltip {
+        font-size: 1.4rem;
+        font-family: $main-fonts;
+        color: rgb(158, 158, 158);
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .c-form__buttontext {
+        font-size: 1.3rem;
+        font-family: $main-fonts;
+        color: rgb(255, 255, 255);
+        font-weight: 400;
+        line-height: 1.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(0, 54, 99);
+        width: 200px;
+        height: 40px;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    .c-form__btnsubmit {
+        font-size: 1.8rem;
+        font-family: $main-fonts;
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+        line-height: 1.5;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(0, 54, 99);
+        width: 100%;
+        height: 60px;
+        border: 0;
+        margin-top: 51px;
+        position: relative;
+        cursor: pointer;
+
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: url(../../assets/img/right-arrow-in-a-circle.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            width: 25px;
+            height: 25px;
+            right: 15px;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+

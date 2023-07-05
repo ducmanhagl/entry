@@ -1,0 +1,36 @@
+/* Header
+------------------------------------------------------------*/
+.c-header {
+    background-color: rgb(0, 54, 99);
+    padding-bottom: 57px;
+
+    .c-header__inner {
+        text-align: center;
+    }
+
+    .c-header__glogo {
+        padding-top: 24px;
+    }
+
+    .c-header__logo {
+        width: 100%;
+        max-width: 63px;
+    }
+
+    .c-header__title {
+        font-size: 3.6rem;
+        line-height: 1.111;
+        color: rgba(254, 254, 254, 0.451);
+        font-weight: 700;
+        padding-top: 27px;
+    }
+
+    .c-header__subtitle {
+        font-size: 1.4rem;
+        color: rgb(254, 254, 254);
+        font-weight: 400;
+        padding-top: 5px;
+    }
+}
+/* Main menu
+------------------------------------------------------------*/
